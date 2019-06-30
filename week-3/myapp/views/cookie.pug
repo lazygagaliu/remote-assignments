@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Hello, My #{title}!
+  br
+  form(action="/trackName?", method="post")
+    p Please enter your name:
+      input(type="text", name="name")
+    button(type="submit") Submit
